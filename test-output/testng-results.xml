@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="5662" started-at="2022-12-21T10:41:01Z" finished-at="2022-12-21T10:41:06Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="5662" started-at="2022-12-21T10:41:01Z" finished-at="2022-12-21T10:41:06Z">
+      <class name="TestScripts.HomePageTests">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:TestScripts.HomePageTests@60c6f5b]" name="beforeClass" is-config="true" duration-ms="102" started-at="2022-12-21T16:11:01Z" finished-at="2022-12-21T16:11:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="setUpBrowser(java.lang.String)[pri:0, instance:TestScripts.HomePageTests@60c6f5b]" name="setUpBrowser" is-config="true" duration-ms="4682" started-at="2022-12-21T16:11:01Z" finished-at="2022-12-21T16:11:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method status="PASS" signature="test01(org.testng.ITestResult)[pri:0, instance:TestScripts.HomePageTests@60c6f5b]" name="test01" duration-ms="17" started-at="2022-12-21T16:11:05Z" finished-at="2022-12-21T16:11:05Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test01 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestScripts.HomePageTests@60c6f5b]" name="tearDown" is-config="true" duration-ms="624" started-at="2022-12-21T16:11:05Z" finished-at="2022-12-21T16:11:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestScripts.HomePageTests@60c6f5b]" name="afterClass" is-config="true" duration-ms="223" started-at="2022-12-21T16:11:06Z" finished-at="2022-12-21T16:11:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- TestScripts.HomePageTests -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

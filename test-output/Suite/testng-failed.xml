@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="version" value="106"/>
+  <parameter name="platform" value="WINDOWS 10"/>
+  <parameter name="browserType" value="CHROME"/>
+  <listeners>
+    <listener class-name="Utilities.ListenersClass"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="TestScripts.HomePageTests">
+        <methods>
+          <include name="afterClass"/>
+          <include name="tearDown"/>
+          <include name="test01" invocation-numbers="0"/>
+          <include name="setUpBrowser"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- TestScripts.HomePageTests -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

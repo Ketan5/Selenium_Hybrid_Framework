@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Extra logging related to initialization of Log4j. Set to debug or trace 
+	if log4j initialization is failing. -->
+<Configuration status="warn">
+	<Appenders>
+		<!-- Console appender configuration -->
+		<Console name="console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p - %m%n" />
+		</Console>
+		<RollingFile name="rollingFile" fileName="Log/test.log"
+			filePattern="$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log"
+			ignoreExceptions="false">
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p - %m%n" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="5MB" />
+			</Policies>
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<!-- Root logger referring to console appender -->
+		<Root level="info">
+			<AppenderRef ref="rollingFile" />
+			<AppenderRef ref="console" />
+		</Root>
+
+	</Loggers>
+</Configuration>
